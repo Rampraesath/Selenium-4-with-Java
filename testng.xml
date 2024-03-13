@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests" data-provider-thread-count="2">
+
+    <test verbose="2" preserve-order="true" name="Full Test Suite">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="login.PrivateAccLoginTest"/>
+            <class name="login.InvalidEmailCharTest"/>
+<!--            <class name="login.ProNiagaLoginTest"/>-->
+<!--            <class name="login.InvalidPasswordTest"/>-->
+<!--            <class name="login.InvalidPassRetryLimitTest"/>-->
+
+        </classes>
+    </test>
+
+
+<!--    Uncomment the following 2 test block for parallel and cross browsing execution with chrome and firefox-->
+<!--    Comment out the "Full Test Suite" test block to avoid overwhelming parallel test case execution on the machine-->
+
+<!--    <test verbose="2" preserve-order="true" name="Private Login With Firefox">-->
+<!--        <parameter name="browser" value="firefox"></parameter>-->
+<!--        <classes>-->
+<!--            <class name="login.PrivateAccLoginTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test verbose="2" preserve-order="true" name="Private Login With Chorme">-->
+<!--        <parameter name="browser" value="Chrome"></parameter>-->
+<!--        <classes>-->
+<!--            <class name="login.PrivateAccLoginTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>
