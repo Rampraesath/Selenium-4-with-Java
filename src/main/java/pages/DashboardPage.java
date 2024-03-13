@@ -25,38 +25,27 @@ public class DashboardPage extends Utils {
         return driver.findElement(By.xpath("//p[normalize-space()='My Dashboard']"));
     };
 
-    //email
-    //span[@class='ml-3 w-full'] aries.rj@gmail.com
     private WebElement txt_email(){
         return driver.findElement(By.xpath("//span[@class='ml-3 w-full']"));
     };
-    //date
-    //div[normalize-space()='Since 24 Feb 2024']
+
     private WebElement txt_date(){
         return driver.findElement(By.xpath("//div[normalize-space()='Since 24 Feb 2024']"));
     };
 
-    //email at top
-    //div[@class='jss13 jss55 jss14 jss56']aries.rj@gmail.com
 
     private WebElement txt_email_header(){
         return driver.findElement(By.xpath("//div[@class='jss13 jss55 jss14 jss56']"));
     };
-    //dashboard content
-    //div[@class='pd-MuiListItemText-root']//span[contains(text(),'My Ads')]
+
     private WebElement tab_published_ads(){
         return driver.findElement(By.xpath("//div[@class='pd-MuiListItemText-root']//span[contains(text(),'My Ads')]"));
     };
-    //proniaga account type
-    //business name
-    //a[normalize-space()='Diamond']
+
     private WebElement txt_business_name(){
         return driver.findElement(By.xpath("//a[normalize-space()='Diamond']"));
     };
-    //dashboard
-    //div[@class='Desktop__TabActive-sc-122k4l2-8 cnpjhY']
-    //email
-    //div[@class='jss13 jss55 jss14 jss56'] selitest21@gmail.com  (superadmin)  (kena normalize space)
+
 
     private WebElement txt_username_dashboard(){
         return driver.findElement(By.xpath("//div[normalize-space()='Diamond']/following-sibling::div"));
@@ -66,7 +55,6 @@ public class DashboardPage extends Utils {
         return driver.findElement(By.xpath("//div[@class='pd-MuiGrid-root pd-MuiGrid-item pd-MuiGrid-grid-md-3 pd-MuiGrid-grid-lg-3']/div/div/div/following-sibling::div"));
     };
 
-    //div[@class='pd-MuiGrid-root pd-MuiGrid-item pd-MuiGrid-grid-md-3 pd-MuiGrid-grid-lg-3']//div[contains (text(), 'selitest23@gmail.com')]
 
     private WebElement btn_ok(){
         return driver.findElement(By.xpath("//span[contains(text(), 'OK')]"));
